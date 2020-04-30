@@ -133,5 +133,20 @@ Page({
    */
   onShareAppMessage: function () {
 
+    // 获取user_id   userinfo = ....
+    let userId = 100
+    let image = 'http://img4.imgtn.bdimg.com/it/u=1713396441,1487163637&fm=26&gp=0.jpg'
+    let desc = '我是我自己的一个分享哦'
+    if(true){
+      return {
+        title: '我的转发',
+        desc: desc,
+        path: '/pages/user/user?userId=' + userId,
+        imageUrl: image,
+        success: function (res) {
+          console.log('我的分享', res)
+        }
+      }
+    }
   }
 })
